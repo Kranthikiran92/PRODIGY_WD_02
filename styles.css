@@ -1,0 +1,43 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.stopwatch {
+    text-align: center;
+}
+
+#display {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#laps {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 20px;
+    padding: 0;
+}
+
+#laps .list-group-item {
+    background-color: #343a40; /* bg-dark */
+    color: #ffffff;
+    border: 1px solid #444444;
+}
+
+#laps::-webkit-scrollbar {
+    width: 6px;
+}
+
+#laps::-webkit-scrollbar-thumb {
+    background-color: #444444;
+    border-radius: 10px;
+}
+
+#laps::-webkit-scrollbar-track {
+    background-color: #343a40; /* bg-dark */
+}
